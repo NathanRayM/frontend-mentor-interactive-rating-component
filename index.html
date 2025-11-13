@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preload"
+      href="../fonts/overpass-v19-latin-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link
+      rel="preload"
+      href="../fonts/overpass-v19-latin-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main class="main">
+      <!--Start Main Section-->
+      <article class="container">
+        <header class="container__header">
+          <img class="container__icon" src="images/icon-star.svg" alt="" />
+          <h1 class="container__heading">How did we do?</h1>
+        </header>
+        <p class="container__paragraph">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="container__buttons">
+          <button class="button" aria-label="Rate 1 out of 5">1</button>
+          <button class="button" aria-label="Rate 2 out of 5">2</button>
+          <button class="button" aria-label="Rate 3 out of 5">3</button>
+          <button class="button" aria-label="Rate 4 out of 5">4</button>
+          <button class="button" aria-label="Rate 5 out of 5">5</button>
+        </div>
+        <button class="button--submit" aria-disabled="true" disabled>
+          SUBMIT
+        </button>
+      </article>
+      <!--End Main Section-->
+      <!--Start Submission Section-->
+      <article class="submission" aria-live="polite" hidden>
+        <img
+          class="submission__logo"
+          src="images/illustration-thank-you.svg"
+          alt=""
+          aria-hidden="true"
+        />
+        <div class="submission__message">
+          You selected <span class="submission__message--value"></span> out of 5
+        </div>
+        <h2 class="submission__heading">Thank you!</h2>
+        <p class="submission__paragraph">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </article>
+      <!--End Submission section-->
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
