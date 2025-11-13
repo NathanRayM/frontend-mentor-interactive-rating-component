@@ -32,4 +32,4 @@ I also practiced using the hidden attribute in combination with JavaScript for t
 
 ## Acknowledgments
 
-A big thank you to anyone providing feedback on my [solution](https://www.frontendmentor.io/solutions/faq-accordion---responsive-design---html-css-and-vanilla-javascript-BW4lXkjYcs). It definitely helps to find new ways to code and find easier solutions!
+A big thank you to anyone providing feedback on my [solution](https://www.frontendmentor.io/solutions/interactive-rating-component---html-css-vanilla-js-XH7MvkT2Xl). It definitely helps to find new ways to code and find easier solutions!
