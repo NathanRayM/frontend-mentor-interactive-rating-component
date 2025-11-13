@@ -4,7 +4,7 @@
 
 <div align="center">
 
-[Live](https://nathanraym.github.io/interactive-rating-component/)
+[Live](https://nathanraym.github.io/frontend-mentor-interactive-rating-component/)
 | [Solution](https://github.com/NathanRayM/frontend-mentor-interactive-rating-component.git)
 | [Challenge](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI)
 
