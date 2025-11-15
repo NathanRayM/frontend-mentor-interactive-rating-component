@@ -42,6 +42,13 @@ ol {
   --Grey-900: hsl(213, 19%, 18%);
   --Grey-950: hsl(216, 12%, 8%);
   --Orange-500: hsl(25, 97%, 53%);
+  --container-background: radial-gradient(
+    circle at top,
+    hsl(213, 19%, 17%),
+    hsl(213, 25%, 12%)
+  );
+
+  /*=== CSS Custom Font Weights ===*/
   --font-weight-normal: 400;
   --font-weight-bold: 700;
 }
@@ -53,7 +60,7 @@ body {
 }
 
 html {
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-family: Overpass, sans-serif;
 }
 
@@ -75,11 +82,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(
-    circle at top,
-    hsl(213, 19%, 17%),
-    hsl(213, 25%, 12%)
-  );
+  background: var(--container-background);
   gap: 1rem;
   width: 87%;
   max-width: 28rem;
@@ -135,6 +138,7 @@ main {
   border-radius: 50%;
   aspect-ratio: 1 / 1;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .button--submit {
@@ -146,7 +150,7 @@ main {
   width: 100%;
   border-radius: 1.5rem;
   cursor: pointer;
-  margin-bottom: 0.5rem;
+  transition: background-color 0.3s;
 }
 
 /*=== Submission Thank You Container ===*/
@@ -156,11 +160,7 @@ main {
   justify-content: center;
   align-items: center;
   position: absolute;
-  background: radial-gradient(
-    circle at top,
-    hsl(213, 19%, 17%),
-    hsl(213, 25%, 12%)
-  );
+  background: var(--container-background);
   padding: 1.8rem;
   border-radius: 1rem;
   gap: 1.5rem;
@@ -200,6 +200,7 @@ main {
 /*=== Hover States ===*/
 .button:hover {
   background-color: var(--White);
+  color: var(--Grey-900);
 }
 
 .button--submit:hover {
@@ -212,13 +213,24 @@ main {
   color: var(--Grey-950);
 }
 
+/*=== Focus State===*/
+.button:focus-visible {
+  outline: 0.133rem solid var(--Orange-500);
+  outline-offset: 0.266rem;
+  border-radius: 50%;
+}
+
+.button--submit:focus-visible {
+  outline: 0.2rem solid var(--White);
+  outline-offset: 0.266rem;
+}
+
 /*=== Media Query 475px ===*/
 @media (min-width: 31.66rem) {
   .container:not([hidden]) {
     min-width: 27%;
     letter-spacing: 0.03rem;
-    gap: 1.5rem;
-    padding: 2rem;
+    padding: 2.5rem;
     border-radius: 2rem;
   }
 
@@ -239,7 +251,7 @@ main {
   }
 
   .container__buttons {
-    gap: 1.6rem;
+    gap: 1.5rem;
   }
 
   .button {
@@ -249,7 +261,7 @@ main {
   }
 
   .button--submit {
-    width: 95%;
+    width: 100%;
     padding: 0.8rem 0.8rem;
   }
 

@@ -20,7 +20,6 @@ buttons.forEach((button) => {
 });
 
 /*=== Submit click event ===*/
-
 submitBtn.addEventListener("click", () => {
   if (selectedRating) {
     message.textContent = selectedRating;
